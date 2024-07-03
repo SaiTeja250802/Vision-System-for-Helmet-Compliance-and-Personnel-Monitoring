@@ -5,7 +5,7 @@ import dlib
 # Paths
 haar_cascade_path = r'D:\learn\ML\OpenCV\face detection vscode\haar_face.xml'
 face_recognizer_path = r'D:\learn\ML\OpenCV\face detection vscode\face_trained.yml'
-shape_predictor_path = r'D:\learn\ML\OpenCV\shape_predictor_68_face_landmarks.dat'
+shape_predictor_path = r'D:\learn\ML\OpenCV\shape_predictor.dat'
 people_path = 'people.npy'
 
 # Load the list of people
