@@ -8,20 +8,16 @@ face_recognizer_path = r'D:\learn\ML\OpenCV\face detection vscode\face_trained.y
 shape_predictor_path = r'D:\learn\ML\OpenCV\shape_predictor.dat'
 people_path = 'people.npy'
 
-# Load the list of people
 people = np.load(people_path).tolist()
 
-# Initialize the Haar cascade and LBPH face recognizer
 haar_cascade = cv.CascadeClassifier(haar_cascade_path)
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read(face_recognizer_path)
 
-# Initialize Dlib's face detector (HOG + SVM) and shape predictor
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(shape_predictor_path)
 
 
-# Function to use webcam for real-time face recognition
 def real_time_face_recognition():
     cap = cv.VideoCapture(0)
 
@@ -53,5 +49,4 @@ def real_time_face_recognition():
     cv.destroyAllWindows()
 
 
-# Run real-time face recognition
 real_time_face_recognition()
