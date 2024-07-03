@@ -1,7 +1,6 @@
 import os
 import cv2 as cv
 
-# Directory to save the dataset
 dataset_path = r'D:\learn\ML\OpenCV\dataset'
 
 
