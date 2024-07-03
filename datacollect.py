@@ -5,7 +5,6 @@ import cv2 as cv
 dataset_path = r'D:\learn\ML\OpenCV\dataset'
 
 
-# Function to capture images for a person
 def capture_images(person_name, num_images=50):
     person_path = os.path.join(dataset_path, person_name)
     os.makedirs(person_path, exist_ok=True)
@@ -32,7 +31,6 @@ def capture_images(person_name, num_images=50):
     cv.destroyAllWindows()
 
 
-# Main loop to input person name and capture images
 while True:
     person_name = input("Enter the name of the person (or type 'exit' to stop): ").strip()
     if person_name.lower() == 'exit':
